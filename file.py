@@ -19,8 +19,9 @@ def sums_from_file(file_name: str) -> None:
             except IndexError:
                 print("There aren't 2 floats")
             except ValueError:
-                print("Something besides a float")
-
+                print("Couldn't convert to float")
+            except:
+                print("Some error")
 
 if __name__ == "__main__":
     sums_from_file("floats.txt")
