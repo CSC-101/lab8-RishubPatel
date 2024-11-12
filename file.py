@@ -22,6 +22,7 @@ def print_sums_from_file(file_name: str) -> None: #Opens a file with floats and 
                 print("Couldn't convert to float")
             except:
                 print("Some error")
+    file.close()
 
 if __name__ == "__main__":
     print_sums_from_file("floats.txt")
