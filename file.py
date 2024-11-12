@@ -2,7 +2,7 @@ def sums_from_file(file_name: str) -> None:
     try:
         file = (open(file_name, "r"))
     except:
-        print("Error")
+        print("Error opening file")
         exit()
     for line in file:
         if "," in line:
