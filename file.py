@@ -25,3 +25,4 @@ def sums_from_file(file_name: str) -> None:
 
 if __name__ == "__main__":
     sums_from_file("floats.txt")
+    sums_from_file("What the heckers")
