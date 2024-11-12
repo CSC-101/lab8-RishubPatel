@@ -1,4 +1,4 @@
-def sums_from_file(file_name: str) -> None:
+def print_sums_from_file(file_name: str) -> None: #Opens a file with floats and prints the sum of the 2 floats on each line if possible -- else, prints an error message
     try:
         file = (open(file_name, "r"))
     except:
@@ -24,5 +24,5 @@ def sums_from_file(file_name: str) -> None:
                 print("Some error")
 
 if __name__ == "__main__":
-    sums_from_file("floats.txt")
-    sums_from_file("What the heckers")
+    print_sums_from_file("floats.txt")
+    print_sums_from_file("What the heckers")
